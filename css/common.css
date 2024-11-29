@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button.danger {
+  background-color: #dc3545;
+}
+
+button.danger:hover {
+  background-color: #bd2130;
+}
+
+input {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+input:hover {
+  border-color: #007bff;
+}
+
+#categories {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#categories .item {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#categories .item h2 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+#categories .item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#categories .item ul li {
+  font-size: 18px;
+  color: #555;
+  padding: 4px 8px;
+  border-left: 4px solid #007bff;
+  background-color: #ffffff;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#categories .item ul li:hover {
+  background-color: #f0f8ff;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 16px; 
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+.gallery li {
+  flex: 1 1 calc(25% - 16px); 
+  box-sizing: border-box; 
+}
+
+.gallery img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: #333;
+}
+
+#controls {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+}
+
